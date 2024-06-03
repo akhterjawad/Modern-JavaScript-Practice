@@ -24,3 +24,23 @@ let main = new Promise((resolve, reject) => {
     .catch(() => {
         console.log('catch');
     })
+jawad('ahmed')
+    function jawad(jj) {
+        console.log(`haseeb ${jj}`);
+    }
+
+    function hasnain (ok){
+        
+        return `vip ${ok}`;
+    }
+    let ahmed = hasnain(`kamran`)
+    console.log(ahmed);
+
+//      nana=(chacha)=>{
+// console.log(`nana ${chacha} nani`);
+//     }
+//     nana('nawaisa')
+lemon =(smit)=>{
+    console.log(`JS${smit} `);
+}
+lemon(` practice`)
