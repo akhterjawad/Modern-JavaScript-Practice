@@ -44,5 +44,15 @@
 //     console.log(`JS${smit} `);
 // }
 // lemon(` practice`)
-jawad=()=>{ return 'kamran' }
-console.log(jawad);
+
+
+// jawad=()=>{ return 'kamran' }
+// console.log(jawad);
+
+let arrays = ['nashpati','apple','banana']
+let div = document.querySelector('div')
+// for (let i = 0; i < arrays.length; i++) {
+// div.innerHTML+=`
+// ${arrays[i]}
+// `
+// }
