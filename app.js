@@ -49,10 +49,24 @@
 // jawad=()=>{ return 'kamran' }
 // console.log(jawad);
 
-let arrays = ['nashpati','apple','banana']
+let arrays = ['nashpati', ' apple', ' banana']
 let div = document.querySelector('div')
 // for (let i = 0; i < arrays.length; i++) {
 // div.innerHTML+=`
 // ${arrays[i]}
 // `
 // }
+
+
+// for (const iterator of arrays) {
+// //  div.innerHTML+=iterator   
+// }
+
+
+let ObjectMain = {
+    name: 'jawad',
+    age: 19
+}
+for (const key in ObjectMain) {
+    div.innerHTML += ` ${key} => ${ObjectMain[key]},`
+}
