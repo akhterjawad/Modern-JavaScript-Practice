@@ -70,3 +70,7 @@ let ObjectMain = {
 for (const key in ObjectMain) {
     div.innerHTML += ` ${key} => ${ObjectMain[key]},`
 }
+let arraymain=['haseeb','jawad','lemon']
+for (const iterator of arraymain) {
+ console.log(iterator);   
+}
