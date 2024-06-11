@@ -77,16 +77,16 @@ let ObjectMain = {
 let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let mom = num.map(item => item)
 console.log(mom);
-let kamran =num.map((item,index,)=>{
-    return item,index
+let kamran = num.map((item, index,) => {
+    return item, index
 })
 console.log(kamran);
-let jawad = num.map((item)=>{
-    return item>5
+let jawad = num.map((item) => {
+    return item > 5
 })
 console.log(jawad);
-let yaqwb = num.filter((item)=>{
-    return item>5
+let yaqwb = num.filter((item) => {
+    return item > 5
 })
 console.log(yaqwb);
 
@@ -322,9 +322,23 @@ const products = [
 // })
 // console.log(MainProducts);
 
-let MainProducts = products.filter((item)=>{
-    return item.category==="Electronics"&&item.price>100
-}).filter((item)=>{
-    return item.price<300
+let MainProducts = products.filter((item) => {
+    return item.category === "Electronics" && item.price > 100
+}).filter((item) => {
+    return item.price < 300
 })
 console.log(MainProducts);
+
+var fruit = "mango";
+switch (fruit) {
+    case "apple":
+        console.log("Apple is my favorite fruit.");
+        break;
+
+    case "anana":
+        console.log("I love Bananas.");
+        break;
+
+    default:
+        console.log("I don't like that fruit.");
+}
