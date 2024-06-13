@@ -342,7 +342,7 @@ switch (fruit) {
     default:
         console.log("I don't like that fruit.");
 }
-let job =4
+let job = 4
 let flight = new Promise((resolve, reject) => {
     if (job > 9) {
         console.log('if');
@@ -353,7 +353,7 @@ let flight = new Promise((resolve, reject) => {
     }
 })
 
-let experience = 1
+let experience = 3
 const exist = new Promise((resolve, reject) => {
     if (experience > 3) {
         console.log('accepted');
@@ -363,3 +363,13 @@ const exist = new Promise((resolve, reject) => {
         reject()
     }
 })
+exist
+    .then(() => {
+        console.log('then');
+    })
+    .catch(() => {
+        console.log('catch');
+    })
+
+    
+    let e = 3; if (e > 3) { console.log('accept'); } else { console.log('reject'); }
