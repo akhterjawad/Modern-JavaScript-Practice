@@ -342,3 +342,24 @@ switch (fruit) {
     default:
         console.log("I don't like that fruit.");
 }
+let job =4
+let flight = new Promise((resolve, reject) => {
+    if (job > 9) {
+        console.log('if');
+        // resolve()
+    } else {
+        console.log('else');
+        // reject()
+    }
+})
+
+let experience = 1
+const exist = new Promise((resolve, reject) => {
+    if (experience > 3) {
+        console.log('accepted');
+        resolve()
+    } else {
+        console.log('rejected');
+        reject()
+    }
+})
