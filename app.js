@@ -371,5 +371,19 @@ exist
         console.log('catch');
     })
 
-    
-    let e = 3; if (e > 3) { console.log('accept'); } else { console.log('reject'); }
+
+let e = 3; if (e > 3) { console.log('accept'); } else { console.log('reject'); }
+
+console.log('localStorage');
+
+//localStorage ka data setitem sa  jata hai or jub huma usko get karna ho to getitem sa ata ha jub hum data bhajta ha to paihla hum key likhta ha or dubara ma value ,key yani ka kis nam sa data bhajna ha or value yani ka kia data bhajna ha
+// normaly value ko string ma likhta ha yani  ' ' lakin is ma hama patanahi chalta ka data kis form ma gia ha or jub hum koi variable ko localStorage ma bhajta ha to wo print hona ma masla karta ha isilia hum JSON.stringify lagata ha is sa data string ki form ma print hota ha
+
+let m = {
+    jawad: 'name',
+    age: 20,
+}
+localStorage.setItem('key,abba', m)
+localStorage.setItem('SendObject',JSON.stringify(m))
+
+// jub huma data ko get karna ho to getitem sa karta ha
