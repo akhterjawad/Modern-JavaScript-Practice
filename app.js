@@ -387,13 +387,16 @@ localStorage.setItem('key,abba', m)
 localStorage.setItem('SendObject',JSON.stringify(m))
 
 // jub huma data ko get karna ho to getitem sa karta ha
-// let jj = (params)=> {
-//     console.log(params);
-// }
-// let ebad = ()=>{
-//     console.log('kamran');
-// }
+let k =() =>console.log('hello')
+k()
 
-let jj =()=>{
-    console.log('vloger');
+let l =()=>{
+    console.log('SMIT');
 }
+
+localStorage.setItem('key',JSON.stringify(m))
+let data = JSON.parse(localStorage.getItem('key'))
+console.log(data);
+localStorage.setItem('key main',JSON.stringify(m));
+let liaquat = JSON.parse(localStorage.getItem('key main')) 
+console.log(liaquat);
