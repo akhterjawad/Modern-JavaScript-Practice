@@ -384,19 +384,29 @@ let m = {
     age: 20,
 }
 localStorage.setItem('key,abba', m)
-localStorage.setItem('SendObject',JSON.stringify(m))
+localStorage.setItem('SendObject', JSON.stringify(m))
 
 // jub huma data ko get karna ho to getitem sa karta ha
-let k =() =>console.log('hello')
+let k = () => console.log('hello')
 k()
 
-let l =()=>{
+let l = () => {
     console.log('SMIT');
 }
 
-localStorage.setItem('key',JSON.stringify(m))
+localStorage.setItem('key', JSON.stringify(m))
 let data = JSON.parse(localStorage.getItem('key'))
 console.log(data);
-localStorage.setItem('key main',JSON.stringify(m));
-let liaquat = JSON.parse(localStorage.getItem('key main')) 
+localStorage.setItem('key main', JSON.stringify(m));
+let liaquat = JSON.parse(localStorage.getItem('key main'))
 console.log(liaquat);
+
+let NainTara = document.querySelector('h1')
+NainTara.innerHTML='haseeb'
+let main = document.querySelector('h2')
+main.innerHTML='chain mara'
+
+function late(name){
+    console.log(name);
+}
+late('jawad')
