@@ -1,13 +1,29 @@
 // // arrow function
 
-// let a = arrow = item => {
-//     console.log(`hello`, item);
-//     // return `hello`,item
+let a = arrow = item => {
+    console.log(`hello`, item);
+    return `hello`,item
+}
+console.log(arrow('haseeb'));
+arrow(`jawad`)
 
-// }
-// console.log(arrow('haseeb'));
-// arrow(`jawad`)
 
+let map =get =>{
+    console.log(get);
+    return get
+}
+console.log(map('arrow'));
+
+
+let get = () => {
+    console.log('lemon');
+}
+let vip = car => console.log(car);
+vip('prado')
+let area = (jawad) => {
+    console.log(jawad);
+}
+area('main')
 // let value = 1000;
 // let main = new Promise((resolve, reject) => {
 //     if (value >= 1001) {
@@ -401,12 +417,22 @@ localStorage.setItem('key main', JSON.stringify(m));
 let liaquat = JSON.parse(localStorage.getItem('key main'))
 console.log(liaquat);
 
-let NainTara = document.querySelector('h1')
-NainTara.innerHTML='haseeb'
-let main = document.querySelector('h2')
-main.innerHTML='chain mara'
 
-function late(name){
+
+let NainTara = document.querySelector('h1')
+NainTara.innerHTML = 'haseeb'
+let main = document.querySelector('h2')
+main.innerHTML = 'chain mara'
+
+function late(name) {
     console.log(name);
 }
 late('jawad')
+
+let cities = ['lahore', 'karachi', 'islamabad']
+console.log(cities[0][1]);
+console.log(cities[1][4]);
+console.log(cities.length);
+cities[0] = 'hyderabad'
+cities[3] = 'landan'
+cities[2] = 'hongkong'
