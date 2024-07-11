@@ -369,23 +369,23 @@ let flight = new Promise((resolve, reject) => {
     }
 })
 
-let experience = 3
-const exist = new Promise((resolve, reject) => {
-    if (experience > 3) {
-        console.log('accepted');
-        resolve()
-    } else {
-        console.log('rejected');
-        reject()
-    }
-})
-exist
-    .then(() => {
-        console.log('then');
-    })
-    .catch(() => {
-        console.log('catch');
-    })
+// let experience = 3
+// const exist = new Promise((resolve, reject) => {
+//     if (experience > 3) {
+//         console.log('accepted');
+//         resolve()
+//     } else {
+//         console.log('rejected');
+//         reject()
+//     }
+// })
+// exist
+//     .then(() => {
+//         console.log('then');
+//     })
+//     .catch(() => {
+//         console.log('catch');
+//     })
 
 
 let e = 3; if (e > 3) { console.log('accept'); } else { console.log('reject'); }
@@ -399,8 +399,6 @@ let m = {
     jawad: 'name',
     age: 20,
 }
-localStorage.setItem('key,abba', m)
-localStorage.setItem('SendObject', JSON.stringify(m))
 
 // jub huma data ko get karna ho to getitem sa karta ha
 let k = () => console.log('hello')
@@ -413,12 +411,20 @@ let l = () => {
 localStorage.setItem('key', JSON.stringify(m))
 let data = JSON.parse(localStorage.getItem('key'))
 console.log(data);
-localStorage.setItem('key main', JSON.stringify(m));
-let liaquat = JSON.parse(localStorage.getItem('key main'))
-console.log(liaquat);
 
 
 
+localStorage.setItem('vip',JSON.stringify(m))
+let c = JSON.parse(localStorage.getItem('vip'))
+
+
+localStorage.setItem('b',JSON.stringify(m))
+let p = JSON.parse(localStorage.getItem('b')) 
+
+
+localStorage.setItem('array',JSON.stringify(m))
+let getmain = JSON.parse(localStorage.getItem('array'))
+console.log(getmain);
 let NainTara = document.querySelector('h1')
 NainTara.innerHTML = 'haseeb'
 let main = document.querySelector('h2')
@@ -436,3 +442,7 @@ console.log(cities.length);
 cities[0] = 'hyderabad'
 cities[3] = 'landan'
 cities[2] = 'hongkong'
+
+localStorage.setItem('b',JSON.stringify(m))
+let q = JSON.parse(localStorage.getItem('b'))
+console.log(q);
