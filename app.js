@@ -446,3 +446,4 @@ cities[2] = 'hongkong'
 localStorage.setItem('b',JSON.stringify(m))
 let q = JSON.parse(localStorage.getItem('b'))
 console.log(q);
+/////////////
