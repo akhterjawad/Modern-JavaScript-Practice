@@ -110,7 +110,7 @@ function addtocard(card) {
     if (array.includes(phones[card])) {
         phones[card].quantity += 1
     } else {
-        phones[card].quantity += 1
+        phones[card].quantity = 1
         array.push(phones[card])
     }
     console.log(array);
@@ -119,6 +119,6 @@ function addtocard(card) {
 
 button.addEventListener('click', () => {
     console.log(`index-2.html`);
-localStorage.setItem(`SendData`,JSON.stringify(array))
-    window.location = 'index-2.html'
-})
+    localStorage.setItem(`SendData`, JSON.stringify(array));
+    window.location = 'index-2.html';
+});
