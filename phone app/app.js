@@ -105,7 +105,14 @@ phones.map((item, index) => {
 `
 });
 
-let array = [];
+let array;
+let updatedArrayItems = JSON.parse(localStorage.getItem(`SendData`));
+if (updatedArrayItems === null) {
+    array = [];
+} else {
+    array = updatedArrayItems
+};
+
 function addtocard(card) {
     if (array.includes(phones[card])) {
         phones[card].quantity += 1
