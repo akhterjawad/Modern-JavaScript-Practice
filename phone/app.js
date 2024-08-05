@@ -79,12 +79,11 @@ const phones = [
         price: 329.00,
         img: 'https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-plus-int.jpg'
     },
-]
-let div = document.querySelector('.products')
-let button = document.querySelector('.button')
-
-phones.map((item, index) => {
-    div.innerHTML += `
+];
+let div = document.querySelector('.container');
+//ideration of phone array to rander screen
+phones.map((item,index)=>{
+div.innerHTML+=`
     <div class="rounded border card-width  p-2 ">
                     <div class=" text-center  p-2"><img src="${item.img}" class="card-img-width "
                             alt="no image">
@@ -101,31 +100,38 @@ phones.map((item, index) => {
                         </div>
                         <div><button type="button" onclick="addtocard(${index})" class="btn card-button-font-size btn-outline-success mb-2">Add To Card</button></div>
                     </div>
-                </div>
-`
+                </div>`
+                // console.log(item);
 });
 
 let array;
-let updatedArrayItems = JSON.parse(localStorage.getItem(`SendData`));
-if (updatedArrayItems === null) {
-    array = [];
+let updatedArrayItems = JSON.parse(localStorage.getItem(`sanddata`));
+if (updatedArrayItems==null) {
+    
 } else {
-    array = updatedArrayItems
-};
+    
+}
+
+
+
+
 
 function addtocard(card) {
     if (array.includes(phones[card])) {
-        phones[card].quantity += 1;
+        phones[card].quantity+=1
     } else {
-        phones[card].quantity = 1;
-        array.push(phones[card]);
-    }
+        phones[card].quantity+=1
+        array.push(phones[card])
+    };
     console.log(array);
+};
 
-}
 
-button.addEventListener('click', () => {
-    console.log(`index-2.html`);
-    localStorage.setItem(`SendData`, JSON.stringify(array));
-    window.location = 'index-2.html';
-});
+
+
+let button = document.querySelector('.button');
+button.addEventListener('click',function(){
+    localStorage.setItem(`sanddata`,JSON.stringify(array))
+    console.log(`about.html`);
+    window.location=`about.html`;
+})
