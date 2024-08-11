@@ -1,6 +1,6 @@
 // // arrow function
 
-let a = arrow = item => {
+let  arrow = item => {
     console.log(`hello`, item);
     return `hello`,item
 }
@@ -408,6 +408,25 @@ let l = () => {
     console.log('SMIT');
 }
 
+
+
+let array = ['jawad', 'haseeb', 'hasnain']; 
+// localStorage.setItem('keymain', JSON.stringify(array));
+
+// let getvalue = JSON.parse(localStorage.getItem('keymain'));
+// console.log(getvalue);
+
+localStorage.setItem('akhter',JSON.stringify(array));
+let mainarray= JSON.parse(localStorage.getItem(`akhter`))
+console.log(mainarray);
+
+
+
+
+
+
+
+
 localStorage.setItem('key', JSON.stringify(m))
 let data = JSON.parse(localStorage.getItem('key'))
 console.log(data);
@@ -446,3 +465,4 @@ cities[2] = 'hongkong'
 localStorage.setItem('b',JSON.stringify(m))
 let q = JSON.parse(localStorage.getItem('b'))
 console.log(q);
+////

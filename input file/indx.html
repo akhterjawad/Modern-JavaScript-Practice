@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Input Example</title>
+</head>
+<body>
+    <input type="file" id="fileInput">
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            var fileInput = event.target;
+            var file = fileInput.files[0];
+            if (file) {
+                console.log('File name:', file.name);
+                console.log('File size:', file.size);
+                console.log('File type:', file.type);
+            } else {
+                console.log('No file selected');
+            }
+        });
+    </script>
+</body>
+</html>

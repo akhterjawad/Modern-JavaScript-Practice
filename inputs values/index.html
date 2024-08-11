@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types</title>
+    <!-- Bootstrap CSS for styling (optional) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">HTML Input Types</h1>
+    <form id="myForm">
+        <div class="form-group">
+            <label for="text">Text</label>
+            <input type="text" id="text" class="form-control" placeholder="Enter text">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter password">
+        </div>
+        <div class="form-group">
+            <label for="submit">Submit</label>
+            <input type="submit" id="submit" class="btn btn-primary" value="Submit">
+        </div>
+        <div class="form-group">
+            <label for="reset">Reset</label>
+            <input type="reset" id="reset" class="btn btn-secondary" value="Reset">
+        </div>
+        <div class="form-group">
+            <label>Radio</label><br>
+            <input type="radio" name="radio" value="option1" id="radio1"> Option 1<br>
+            <input type="radio" name="radio" value="option2" id="radio2"> Option 2
+        </div>
+        <div class="form-group">
+            <label>Checkbox</label><br>
+            <input type="checkbox" name="checkbox1" value="option1" id="checkbox1"> Option 1<br>
+            <input type="checkbox" name="checkbox2" value="option2" id="checkbox2"> Option 2
+        </div>
+        <div class="form-group">
+            <label for="button">Button</label>
+            <input type="button" id="button" class="btn btn-info" value="Click Me">
+        </div>
+        
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" class="form-control">
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="file">File</label>
+            <input type="file" id="file" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input type="image" id="image" src="https://via.placeholder.com/150" alt="Submit">
+        </div>
+        
+        
+        
+        <div class="form-group">
+            <label for="url">URL</label>
+            <input type="url" id="url" class="form-control" placeholder="Enter URL">
+        </div>
+        
+        <div class="form-group">
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea" class="form-control" rows="3"></textarea>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
