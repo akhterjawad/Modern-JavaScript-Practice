@@ -32,16 +32,16 @@ function renderscreen() {
     });
 };
 function deleted(i) {
-    array.splice(i,1);
+    array.splice(i, 1);
     renderscreen();
 };
-function edit(i){
-    let editvalue =+ prompt(`number`);
-    let editThing= prompt(`thing`);
-    if (editThing !==``) {
-        array[i].thing =editThing
+function edit(i) {
+    let editvalue = + prompt(`number`);
+    let editThing = prompt(`thing`);
+    if (editThing !== ``) {
+        array[i].thing = editThing
     }
-    if (editvalue!==``) {
+    if (editvalue !== ``) {
         array[i].amount = editvalue
     }
     renderscreen();

@@ -1,14 +1,14 @@
 // // arrow function
 
-let  arrow = item => {
+let arrow = item => {
     console.log(`hello`, item);
-    return `hello`,item
+    return `hello`, item
 }
 console.log(arrow('haseeb'));
 arrow(`jawad`)
 
 
-let map =get =>{
+let map = get => {
     console.log(get);
     return get
 }
@@ -410,21 +410,15 @@ let l = () => {
 
 
 
-let array = ['jawad', 'haseeb', 'hasnain']; 
+let array = ['jawad', 'haseeb', 'hasnain'];
 // localStorage.setItem('keymain', JSON.stringify(array));
 
 // let getvalue = JSON.parse(localStorage.getItem('keymain'));
 // console.log(getvalue);
 
-localStorage.setItem('akhter',JSON.stringify(array));
-let mainarray= JSON.parse(localStorage.getItem(`akhter`))
+localStorage.setItem('akhter', JSON.stringify(array));
+let mainarray = JSON.parse(localStorage.getItem(`akhter`))
 console.log(mainarray);
-
-
-
-
-
-
 
 
 localStorage.setItem('key', JSON.stringify(m))
@@ -432,16 +426,15 @@ let data = JSON.parse(localStorage.getItem('key'))
 console.log(data);
 
 
-
-localStorage.setItem('vip',JSON.stringify(m))
+localStorage.setItem('vip', JSON.stringify(m))
 let c = JSON.parse(localStorage.getItem('vip'))
 
 
-localStorage.setItem('b',JSON.stringify(m))
-let p = JSON.parse(localStorage.getItem('b')) 
+localStorage.setItem('b', JSON.stringify(m))
+let p = JSON.parse(localStorage.getItem('b'))
 
 
-localStorage.setItem('array',JSON.stringify(m))
+localStorage.setItem('array', JSON.stringify(m))
 let getmain = JSON.parse(localStorage.getItem('array'))
 console.log(getmain);
 let NainTara = document.querySelector('h1')
@@ -454,15 +447,29 @@ function late(name) {
 }
 late('jawad')
 
-let cities = ['lahore', 'karachi', 'islamabad']
-console.log(cities[0][1]);
-console.log(cities[1][4]);
-console.log(cities.length);
-cities[0] = 'hyderabad'
-cities[3] = 'landan'
-cities[2] = 'hongkong'
+let cities = ['lahore', `karachi`, 'islamabad']
+let [city1, city2, city3] = cities
+console.log(cities);
+let fruits = [`apple`, , `nashpati`]
+let [fruit1, fruit2 = `banana`, fruit3] = fruits
+console.log(fruits);
+console.log(fruit2);
+let number = [1, 2, 3, 4, 5,cities]
+let number2 = [1, 2, 3, 4, 5,...cities]
+console.log(number);
+console.log(number2);
 
-localStorage.setItem('b',JSON.stringify(m))
-let q = JSON.parse(localStorage.getItem('b'))
-console.log(q);
+// let [a, b, cc, d] = number
+// console.log(a, b, cc);
+
+// console.log(cities[0][1]);
+// console.log(cities[1][4]);
+// console.log(cities.length);
+// cities[0] = 'hyderabad'
+// cities[3] = 'landan'
+// cities[2] = 'hongkong'
+
+// localStorage.setItem('b',JSON.stringify(m))
+// let q = JSON.parse(localStorage.getItem('b'))
+// console.log(q);
 ////
